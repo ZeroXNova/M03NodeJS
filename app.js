@@ -11,8 +11,8 @@ const app = express();
 const dbURI = 'mongodb+srv://netninja:Zero2019@cluster0.acb4guo.mongodb.net/Node-tuts?retryWrites=true&w=majority&appName=Cluster0';
 
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(result => app.listen(3000))
-    .catch(err => console.log(err));
+    .then((result) => app.listen(3000))
+    .catch((err) => console.log(err));
 
 // register view engine
 app.set('view engine', 'ejs');
